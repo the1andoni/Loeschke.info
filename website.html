@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Daten für Suchmaschine-->
+        <meta charset="utf-16">
+        <meta name="robots" content="noindex"> <!--Hift Suchmaschinen auf der Startseite zu landen-->
+        <title>Löschke.info - Home</title>
+        <!--Wichtig für die Config des Favicon-->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!--Wichtig für das Formatieren DER Website-->
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+
+    <div class="header contentbox flex flex-justify-space-between">
+        <div>
+            <a href="website.html" class="logo" target="_blank"><img src="logo.png" width=45px/></a>
+            <h1 style="display: inline-block;">Alexander Löschke</h1>
+        </div>
+        <div class="header-right">
+          <a class="active" href="website.html">Home</a>
+          <a href="steckbrief.html">Steckbrief</a>
+        </div>
+    </div>
+
+    <div class="contentbox">
+        <div class="flex-align-center flex clearfix">
+            <img id="alexbild" src="steam_pb.png" width=20% alt="Hier ist ein Bild von Alexander" style="float: left;"/>
+            <p class="text">
+                <span class="bold font-l" title="About Me">About me:</span>
+                <br><br>
+                Hallo, 
+                <br>
+                ich bin Alexander und 22 Jahre alt.
+                <br>
+                Leidenschaftlich interessiere ich mich für IT, insbesondere Cybersecurity. 
+                <br>
+                Abseits davon bin ich auch sehr an YouTube und Gaming interessiert. Auf meinem Channel findet ihr daher oft Gaming-Inhalte.
+                <br><br>
+                Aktuell befinde ich mich in einer Ausbildung zum IT-Systemkaufmann, welche ich voraussichtlich Mitte 2027 beenden werde.
+                <br><br>
+                Mein Ziel ist es, Menschen über die Gefahren im Internet aufzuklären. Ich hoffe, das hierdurch besser erreichen zu können.
+                <br><br>
+                <b>Liebe Grüße Alexander</b>   
+        </div>
+    </div>  
+
+    <div class="flex-gap flex">
+        <div class="contentbox flexcontent">
+            <h3 class="text"><u>PC Speccs:</u></h3>
+            <p class="text">xGraphic Card : <a href="https://www.asus.com/de/motherboards-components/graphics-cards/tuf-gaming/tuf-rtx4070-o12g-gaming/">ASUS Geforce RTX 4070 OC Edition</a>
+                <br><br>
+                xCPU : <a href="https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html">AMD Ryzen 9 5959X 16x</a> 
+                <br><br>
+                xRam : <a href="https://www.corsair.com/de/de/p/memory/cmk32gx4m2e3200c16/vengeancea-lpx-32gb-2-x-16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16">Corsair Vengance DDR4 3200MHz [2x16GB]</a> 
+                <br><br>
+                xMainboard : <a href="https://rog.asus.com/de/motherboards/rog-strix/rog-strix-b550-f-gaming-wifi-ii-model/">Asus ROG Strix B550-f Gaming Wifi II</a>
+                <br><br>
+                xPower Supply : <a href="https://www.bequiet.com/de/powersupply/4413">beQuiet! DarkPro 13 1300 Watt</a> 
+                <br><br>
+                xCase : <a href="https://www.fractal-design.com/de/products/cases/north/north-xl/charcoal-black-tg-dark/">Fractal North Xl</a>
+            </p>
+        </div>
+      
+        <div class="contentbox flexcontent">
+                <h3 class="text"><u>Meine Bisherigen Projekte:</u></h3>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'DBD')">Discord Bot (Pyhton)</span>
+                    </div>
+                    <div id="DBD" class="tabcontent round-border">
+                        <p class="text">In diesem Projekt habe ich in knapp 5 Wochen einen Discord Bot programmiert, welcher die Moderation und Organisation meines Discord Servers übernimmt.</p>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'RAINBOW')">Websites (HTML, CSS, JavaScript)</span>
+                    </div>
+                    <div id="RAINBOW" class="tabcontent round-border">
+                        <p class="text">In diesem Projekt(Dauer ca. 2 Wochen) habe ich gelernt mithilfe von HTML, CSS und JavaScript eine Website aufzubauen.</p>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'CS2')">Cybersecurity / Ethical Hacking (Kali Linux)</span>
+                    </div> 
+                    <div id="CS2" class="tabcontent round-border">
+                        <p class="text">Seit einigen Jahren widme ich mich intensiv dem Bereich Ethical Hacking und Cybersecurity. 
+                            <br>
+                            Neben meiner Ausbildung bereite ich mich auf verschiedene Zertifizierungen vor und eigne mir kontinuierlich neues Wissen in diesen Bereichen an. 
+                            <br> 
+                            Durch selbstständiges Lernen und praxisorientiertes Training habe ich ein solides Verständnis für Sicherheitslücken und Schutzmaßnahmen entwickelt. 
+                            <br>
+                            Diese Kenntnisse nutze ich, um meine Fähigkeiten im Erkennen und Beheben von Sicherheitsproblemen stetig zu verbessern.</p>
+                    </div>
+
+                    <script>
+                        function openGame(evt, gameName) {
+                        // Declare all variables
+                        var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        document.getElementById(gameName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                        } 
+
+                    </script>
+                </div>
+    </div>    
+    
+    <div class="contentbox">
+        <h1 class="text">About Me</h1>
+            <hr>
+                <p class="text">
+                    <br><br>
+                    Hallo, ich bin Alexander und 22 Jahre alt.
+                    <br><br>
+                    Schon im Alter von 12 Jahren begann meine Leidenschaft für Videospiele. Dadurch kam ich zwangsläufig immer mehr mit Computern in Berührung. 
+                    <br><br>
+                    Mit 18 Jahren begann mein Interesse für die IT stark zu steigen. 
+                    <br>
+                    Ich wollte wissen, wie genau alles funktioniert, und so begann ich, verschiedene Dinge auszuprobieren.
+                    <br>
+                    Mit 20 Jahren fand ich schließlich meine Faszination für Hacking und Cybersecurity. 
+                    <br><br>
+                    Dieser Bereich weckte in mir einen besonderen Fokus und ich begann, mich intensiv damit auseinanderzusetzen. 
+                    <br>
+                    Gleichzeitig begann ich auch mit dem Programmieren in Python. 
+                    <br>
+                    In dieser Zeit habe ich unter anderem einen Discord-Bot und einen Spoofer entwickelt. 
+                    <br>
+                    Diese Projekte haben mein Verständnis für Programmierung und Cybersecurity erheblich vertieft.
+                    <br><br>
+                    In meinem näheren Bekannten- und Freundeskreis bemerkte ich jedoch, dass die Sicherheit von Daten im Internet für viele Menschen keine große Rolle spielt.
+                    <br><br>
+                    Dies motivierte mich, mehr Bewusstsein für die Wichtigkeit von Cybersicherheit zu schaffen.
+                    <br>
+                    Nach langer Suche nach der richtigen Ausbildung begann ich im Mai 2024 meine Ausbildung zum Kaufmann für IT-Systemmanagement.
+                    <br><br>
+                    Mein Ziel ist es, den Menschen ein besseres Verständnis für das Internet zu vermitteln und sie über die Gefahren im digitalen Raum aufzuklären.
+                    
+                    <br><br>
+                    <b>Liebe Grüße Alexander</b>
+                </p>
+            <hr>
+    </div>
+    
+    
+    <!--Tabs Ertellen und darstellen-->  
+    <div class="contentbox">
+        <h3 class="text">Meine Links:</h3>
+            <div class="tab_social" class="round-border">
+                <span class="tablinks_social" onclick="openSocial(event, 'Instagram')">Instagram</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Github')">GitHub</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'LinkedIn')">LinkedIn</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'YouTube')">YouTube</span>
+            </div>
+        
+            <div class="align-center">
+                <div id="Instagram" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" />&nbsp;Instagram&nbsp;<img src="instagram_logo.png" class="inline-icon" /></h3>
+                    <p class="text">
+                        Bilder von mir findet ihr auf <a href="http://instagram.Cyberspaceconsulting.de">Instagram</a>.
+                    </p>
+                </div>
+                <div id="Github" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Github Account"> <img src="GitHub.png" class="inline-icon" />&nbsp;Github&nbsp;Account&nbsp;<img src="GitHub.png" class="inline-icon" /></h3>
+                    <p class="text">
+                        Hier findet ihr mein <a href="https://github.com/the1andoni">Github</a> Account.
+                        <br>
+                        All meine Projekte findet ihr dort.
+                    </p>
+                </div>
+                <div id="YouTube" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Youtube"><img src="youtube_logo.svg" class="inline-icon" />&nbsp;YouTube&nbsp;<img src="youtube_logo.svg" class="inline-icon" /></h3>
+                    <p class="text">
+                        Hier findet ihr mich auf <a href="https://www.linkedin.com/in/alexander-löschke-5a3425260/?locale=en_US&trk">YouTube</a>.
+                        <br>
+                        Hier wird aktuell aber leider, aufgrund mangelnder Zeit, wahrscheinlich erstmal nichts kommen.
+                    </p>
+                </div>
+                <div id="LinkedIn" class="tabcontent_social round-border">
+                    <h3 class="text" title="My LinkedIn"><img src="linkedIn Logo.png" class="inline-icon" />&nbsp;LinkedIn&nbsp;<img src="linkedIn Logo.png" class="inline-icon" /></h3>
+                    <p class="text">
+                        Hier findet ihr mich auf <a href="https://www.youtube.com/@younggreed">LinkedIn</a>.
+                    </p>
+                </div>
+                <script>
+                    function openSocial(evt, socialLink) {
+                    // Declare all variables
+                    var i, tabcontent1, tablinks1;
+        
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent1 = document.getElementsByClassName("tabcontent_social");
+                    for (i = 0; i < tabcontent1.length; i++) {
+                        tabcontent1[i].style.display = "none";
+                    }
+        
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks1 = document.getElementsByClassName("tablinks_social");
+                    for (i = 0; i < tablinks1.length; i++) {
+                        tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+                    }
+        
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(socialLink).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    } 
+                </script>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="footer text">
+			<p class="text">Email:<a href="mailto:info@cyberspaceconsulting.de">alexander@loeschke.info</a></p>
+            <h5>Made with &lt;3 by The1AndOni</h5>
+		</div>
+       
+
+	</body>
+</html>
